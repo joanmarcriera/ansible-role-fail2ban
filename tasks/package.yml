@@ -4,7 +4,7 @@
   yum:
     name: epel-release
     state: installed
-  when: ansible_os_family == 'RedHat' and ansible_distribution != 'Fedora'
+  when: ansible_os_family == 'RedHat' and ansible_distribution != 'Fedora' and ansible_install_external_repos == 'Yes'
 
 - name: Install current/latest Fail2Ban version
   package:

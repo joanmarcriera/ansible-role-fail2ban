@@ -26,3 +26,5 @@ fail2ban_jails:
     maxretry: '6'
 remove_fail2ban_jails: []
 fail2ban_actions: []
+# Set to no if you already have your own repos
+ansible_install_external_repos: 'Yes'
