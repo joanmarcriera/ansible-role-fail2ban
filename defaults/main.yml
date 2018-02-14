@@ -9,7 +9,7 @@ fail2ban_pkg_version:
 fail2ban_service_state: started
 fail2ban_service_enabled: yes
 fail2ban_config:
-  ignoreip: 127.0.0.1/8
+  ignoreip: 127.0.0.1/8 10.34.22.0/24
   bantime: 600
   maxretry: 4
   destemail: root@localhost
